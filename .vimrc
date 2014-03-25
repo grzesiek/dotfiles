@@ -40,7 +40,8 @@ Bundle 'gmarik/vundle'
 
 " Bundles
 Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-rails.git'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-bundler'
 Bundle 'tobyS/pdv'
 Bundle 'tobyS/vmustache'
 Bundle 'L9'
