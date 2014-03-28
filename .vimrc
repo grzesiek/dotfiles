@@ -31,8 +31,10 @@ let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates"
 nnoremap <C-p> :call pdv#DocumentCurrentLine()<CR>
 
 set nocompatible
-filetype off
+filetype on
 filetype plugin indent on
+au FileType ruby setl tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+set autoindent
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -42,6 +44,7 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
+Bundle 'vim-ruby/vim-ruby'
 Bundle 'tobyS/pdv'
 Bundle 'tobyS/vmustache'
 Bundle 'L9'
@@ -50,5 +53,3 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'jQuery'
 Bundle 'evidens/vim-twig'
 Bundle 'tomtom/tcomment_vim'
-
-
