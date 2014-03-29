@@ -36,6 +36,7 @@ filetype plugin indent on
 au FileType ruby setl tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 set autoindent
 
+" Vundle: git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
