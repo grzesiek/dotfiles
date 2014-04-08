@@ -34,6 +34,7 @@ set nocompatible
 filetype on
 filetype plugin indent on
 au FileType ruby setl tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+au FileType eruby setl tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 set autoindent
 
 set rtp+=~/.vim/bundle/vundle/
