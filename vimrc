@@ -37,6 +37,11 @@ au FileType ruby setl tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 au FileType eruby setl tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 set autoindent
 
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_classes_in_global = 1
+let g:rubycomplete_rails = 1
+let g:rubycomplete_load_gemfile = 1
+
 " Vundle: git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
