@@ -35,6 +35,7 @@ filetype on
 filetype plugin indent on
 au FileType ruby setl tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 au FileType eruby setl tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+au FileType haml setl tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 set autoindent
 
 let g:rubycomplete_buffer_loading = 1
@@ -61,3 +62,4 @@ Bundle 'jQuery'
 Bundle 'evidens/vim-twig'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'othree/html5.vim'
+Bundle 'tpope/vim-haml'
