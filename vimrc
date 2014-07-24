@@ -33,11 +33,10 @@ nnoremap <C-p> :call pdv#DocumentCurrentLine()<CR>
 set nocompatible
 filetype on
 filetype plugin indent on
-au FileType ruby  setl tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-au FileType eruby setl tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-au FileType haml  setl tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-au FileType yaml  setl tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-au FileType coffee setl tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
 
 let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
