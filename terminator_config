@@ -11,3 +11,8 @@
     scrollback_lines = '50000'
     cursor_blink = True
 
+[keybindings]
+  next_tab = <Ctrl><Shift>Right
+  prev_tab = <Ctrl><Shift>Left
+  resize_right = <Ctrl>Page_Up
+  resize_left = <Ctrl>Page_Down
