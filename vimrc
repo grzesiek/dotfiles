@@ -43,24 +43,26 @@ let g:rubycomplete_classes_in_global = 1
 let g:rubycomplete_rails = 1
 let g:rubycomplete_load_gemfile = 1
 
-" Vundle: git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+" Vundle: git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 
-" Bundles
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-bundler'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tobyS/pdv'
-Bundle 'tobyS/vmustache'
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'jQuery'
-Bundle 'evidens/vim-twig'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'othree/html5.vim'
-Bundle 'tpope/vim-haml'
-Bundle 'kchmck/vim-coffee-script'
+" Plugins
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-bundler'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tobyS/pdv'
+Plugin 'tobyS/vmustache'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'jQuery'
+Plugin 'evidens/vim-twig'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'othree/html5.vim'
+Plugin 'tpope/vim-haml'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'fatih/vim-go'
+
+call vundle#end() 
