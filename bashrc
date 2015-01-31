@@ -45,8 +45,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH="$PATH:$HOME/.rvm/bin"
-source ~/.rvm/scripts/rvm
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 export GOROOT=$HOME/pliki/go
 export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/pliki/projekty/go
