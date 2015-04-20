@@ -64,5 +64,7 @@ Plugin 'othree/html5.vim'
 Plugin 'tpope/vim-haml'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'fatih/vim-go'
+Plugin 'editorconfig/editorconfig-vim'
+" Plugin 'jeaye/color_coded'
 
 call vundle#end() 
