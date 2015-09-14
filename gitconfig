@@ -1,0 +1,26 @@
+[user]
+  name = Grzegorz Bizon
+  email = grzegorz.bizon@ntsn.pl
+[status]
+  submoduleSummary = true
+[color]
+  ui = auto
+  branch = auto
+  interactive = auto
+[push]
+  default = current
+[merge]
+  log = true
+[core]
+  editor = vim
+  pager = less -R
+[alias]
+  who = shortlog -e -s -n
+  today = diff @{yesterday}.. --stat
+  branches = branch -avv
+  graph = log --oneline --graph --all --decorate
+  changes = log --pretty=format:"%C(auto,yellow)%h%C(auto)%d%C(auto,reset)\\ by\\ %C(auto,blue)%cn%C(auto,reset),\\ %C(auto,cyan)%ar%C(auto,reset)%n\\ %s%n" --stat
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
