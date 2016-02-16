@@ -77,5 +77,6 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'millermedeiros/vim-statline'
 Plugin 'keith/rspec.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end() 
