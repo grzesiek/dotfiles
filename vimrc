@@ -17,9 +17,10 @@ set ignorecase		" Do case insensitive matching
 set spelllang=pl,en
 
 " NERDTree
+let NERDTreeMapOpenInTab='<C-t>'
 nnoremap <C-Right> :tabnext<CR>
 nnoremap <C-Left> :tabprev<CR>
-nnoremap <C-T> :tabnew<CR>
+nnoremap <S-T> :tabnew<CR>
 " nnoremap ty :tabnext<CR>
 " nnoremap tr :tabprev<CR>
 " nnoremap tn :tabnew<CR>
@@ -61,7 +62,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-bundler'
+" Plugin 'tpope/vim-bundler'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tobyS/pdv'
 Plugin 'tobyS/vmustache'
