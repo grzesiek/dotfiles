@@ -38,6 +38,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+set t_Co=8
 
 " let g:rubycomplete_buffer_loading = 1
 " let g:rubycomplete_classes_in_global = 1
@@ -61,13 +62,15 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
+" status bar
+set laststatus=2
+
 " Plugins
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-rails'
-" Plugin 'tpope/vim-bundler'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tobyS/pdv'
 Plugin 'tobyS/vmustache'
@@ -81,8 +84,9 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'fatih/vim-go'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'millermedeiros/vim-statline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'tpope/vim-fugitive.git'
 Plugin 'keith/rspec.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 
-call vundle#end() 
+call vundle#end()
