@@ -65,6 +65,9 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 " status bar
 set laststatus=2
 
+" FZF
+nnoremap <C-F> :FZF<CR>
+
 " Plugins
 call vundle#begin()
 
@@ -88,5 +91,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'keith/rspec.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'junegunn/fzf'
 
 call vundle#end()

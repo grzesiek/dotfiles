@@ -64,3 +64,5 @@ export GIT_PS1_SHOWUNTRACKEDFILES="1"
 export GIT_PS1_SHOWUPSTREAM="verbose"
 
 PS1="\[\e[32m\]\u\[\e[0m\]\[\e[92m\]@\[\e[32m\]\H\[\e[0m\]: \[\e[37m\]\W \[\e[0m\]"'$(__git_ps1 "\[\e[33m\]| \[\e[37m\]b: \[\e[92m\]%s ")'"\[\e[0m\]"'\$ '
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
