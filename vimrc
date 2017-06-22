@@ -89,6 +89,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'keith/rspec.vim'
 Plugin 'junegunn/fzf'
+Plugin 'bogado/file-line'
 
 call vundle#end()
 
