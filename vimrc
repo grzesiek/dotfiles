@@ -4,16 +4,7 @@ set nocp
 syntax on
 colorscheme desert
 
-"set showcmd		" Show (partial) command in status line.
-"set showmatch		" Show matching brackets.
-set ignorecase		" Do case insensitive matching
-"set smartcase		" Do smart case matching
-"set incsearch		" Incremental search
-"set autowrite		" Automatically save before commands like :next and :make
-"set hidden             " Hide buffers when they are abandoned
-"set mouse=a		" Enable mouse usage (all modes)
-
-" Spelling
+set ignorecase
 set spelllang=pl,en
 
 " NERDTree
@@ -21,15 +12,7 @@ let NERDTreeMapOpenInTab='<C-t>'
 nnoremap <C-Right> :tabnext<CR>
 nnoremap <C-Left> :tabprev<CR>
 nnoremap <S-T> :tabnew<CR>
-" nnoremap ty :tabnext<CR>
-" nnoremap tr :tabprev<CR>
-" nnoremap tn :tabnew<CR>
-" nnoremap tq :tabclose<CR>
-" nnoremap tp :tabfirst<CR>
-
-" PDV
-let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates"
-nnoremap <C-p> :call pdv#DocumentCurrentLine()<CR>
+nnoremap <C-P> :FZF<CR>
 
 set nocompatible
 filetype on
@@ -39,17 +22,23 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 set t_Co=8
+set backupdir=~/.vim/backup/
+set directory=~/.vim/backup/
+
+" status bar
+set laststatus=2
 
 " let g:rubycomplete_buffer_loading = 1
 " let g:rubycomplete_classes_in_global = 1
 " let g:rubycomplete_rails = 1
 " let g:rubycomplete_load_gemfile = 1
 
-set backupdir=~/.vim/backup/
-set directory=~/.vim/backup/
-
 " Vundle: git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 set rtp+=~/.vim/bundle/Vundle.vim
+
+" PDV
+let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates"
+nnoremap <C-p> :call pdv#DocumentCurrentLine()<CR>
 
 " indentation
 let g:indent_guides_auto_colors = 0
@@ -61,10 +50,6 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match ExtraWhitespace /\s\+$/
-
-" status bar
-set laststatus=2
-
 
 " Plugins
 call vundle#begin()
@@ -92,6 +77,3 @@ Plugin 'junegunn/fzf'
 Plugin 'bogado/file-line'
 
 call vundle#end()
-
-" FZF
-nnoremap <C-P> :FZF<CR>
