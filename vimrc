@@ -6,6 +6,7 @@ syntax on
 colorscheme desert
 set ignorecase
 set smartcase
+set completeopt=menuone,longest
 
 " Spelling
 set spelllang=pl,en
@@ -41,6 +42,9 @@ set laststatus=2
 nnoremap <C-G> :GoDeclsDir<CR>
 nnoremap <C-F> :GoDef<CR>
 nnoremap <C-D> :GoDoc<CR>
+nnoremap <C-I> :GoImports<CR>
+nnoremap <C-R> :GoRun<CR>
+nnoremap <C-B> :GoBuild<CR>
 
 " Vundle: git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 set rtp+=~/.vim/bundle/Vundle.vim
