@@ -43,7 +43,6 @@ nnoremap <C-G> :GoDeclsDir<CR>
 nnoremap <C-F> :GoDef<CR>
 nnoremap <C-D> :GoDoc<CR>
 nnoremap <C-I> :GoImports<CR>
-nnoremap <C-R> :GoRun<CR>
 nnoremap <C-B> :GoBuild<CR>
 
 " Vundle: git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
